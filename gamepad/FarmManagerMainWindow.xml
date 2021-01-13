@@ -22,9 +22,9 @@
             </Controls>
         </Control>
         <TopLevelControl name="FarmManagerWindow" mouseEnabled="true" movable="true" resizeHandleSize="8" hidden="true">
-            <Dimensions x="520" y="300" />
-            <DimensionConstraints minX="520" minY="300" />
-            <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetY="300" offsetX="20" />
+            <Dimensions x="400" y="430" />
+            <DimensionConstraints minX="400" minY="300" />
+            <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetY="260" offsetX="20" />
             <Controls>
                 <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha=0.4 />
                 <Label name="$(parent)TitleLabel" font="$(ANTIQUE_FONT)|32|soft-shadow-thick" horizontalAlignment="CENTER" verticalAlignment="CENTER" text="Farm Manager">
@@ -40,6 +40,17 @@
 						disabled="EsoUI/Art/Buttons/closebutton_disabled.dds"/>
 					<OnClicked>
 						FarmManager.Hide()
+					</OnClicked>
+				</Button>
+                <Button name="$(parent)ButtonReduceAddon" inherits="ZO_ButtonBehaviorClickSound">
+					<Dimensions x="40" y="40" />
+					<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="15" />
+					<Textures normal="EsoUI/Art/Buttons/closebutton_up.dds"
+						pressed="EsoUI/Art/Buttons/closebutton_down.dds"
+						mouseOver="EsoUI/Art/Buttons/closebutton_mouseover.dds"
+						disabled="EsoUI/Art/Buttons/closebutton_disabled.dds"/>
+					<OnClicked>
+						<!-- <Dimensions x="520" y="500" /> -->
 					</OnClicked>
 				</Button>
                 <Control name="$(parent)DetailPanel">
