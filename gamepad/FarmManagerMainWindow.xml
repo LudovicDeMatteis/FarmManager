@@ -42,17 +42,6 @@
 						FarmManager.Hide()
 					</OnClicked>
 				</Button>
-                <Control name="$(parent)DetailPanel">
-                    <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="70" />
-                    <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="BOTTOMRIGHT" offsetX="-10" offsetY="-200" />
-                    <Controls>
-                        <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha=0.4/>
-                        <Control name="$(parent)FmItemList" inherits="ZO_ScrollList">
-                            <Anchor point="TOPLEFT" relativeTo="$(parent)" offsetX="0" offsetY="0" />
-                            <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="BOTTOMRIGHT" offsetX="0" offsetY="0" />
-                        </Control>
-                    </Controls>
-                </Control>
                 <Label name="$(parent)TotalNameLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="Total Farmed">
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)DetailPanel" offsetX="0" offsetY="10" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)DetailPanel" offsetX="0" offsetY="30" />
