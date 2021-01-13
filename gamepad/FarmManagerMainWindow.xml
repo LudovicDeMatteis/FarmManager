@@ -42,17 +42,6 @@
 						FarmManager.Hide()
 					</OnClicked>
 				</Button>
-                <Button name="$(parent)ButtonReduceAddon" inherits="ZO_ButtonBehaviorClickSound">
-					<Dimensions x="40" y="40" />
-					<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="15" />
-					<Textures normal="EsoUI/Art/Buttons/closebutton_up.dds"
-						pressed="EsoUI/Art/Buttons/closebutton_down.dds"
-						mouseOver="EsoUI/Art/Buttons/closebutton_mouseover.dds"
-						disabled="EsoUI/Art/Buttons/closebutton_disabled.dds"/>
-					<OnClicked>
-						<!-- <Dimensions x="520" y="500" /> -->
-					</OnClicked>
-				</Button>
                 <Control name="$(parent)DetailPanel">
                     <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="70" />
                     <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="BOTTOMRIGHT" offsetX="-10" offsetY="-200" />
