@@ -58,16 +58,16 @@
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TitleLabel" offsetX="0" offsetY="30" />
                 </Label>
                 <Label name="$(parent)TotalLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="">
-                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TitleLabel" offsetX="-80" offsetY="10" />
-                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TitleLabel" offsetX="0" offsetY="30" />
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TitleLabel" offsetX="-90" offsetY="10" />
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TitleLabel" offsetX="-10" offsetY="30" />
                 </Label>
                 <Label name="$(parent)GoldPerSecondNameLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="Gold Per Second">
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)TotalNameLabel" offsetX="0" offsetY="10" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)TotalNameLabel" offsetX="160" offsetY="30" />
                 </Label>
                 <Label name="$(parent)GoldPerSecondLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="">
-                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="-80" offsetY="10" />
-                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="0" offsetY="30" />
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="-90" offsetY="10" />
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="-10" offsetY="30" />
                 </Label>
                 <!--<Button name="$(parent)ButtonStartFarm" mouseEnabled="true" inherits="ZO_DefaultButton" alpha=0.6>
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)GoldPerSecondNameLabel" offsetX="0" offsetY="10" />
