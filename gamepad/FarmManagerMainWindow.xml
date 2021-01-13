@@ -5,7 +5,7 @@
             <Anchor point="LEFT" relativeTo="$(parent)" offsetX="10" />
             <Anchor point="RIGHT" relativeTo="$(parent)" relativePoint="RIGHT" offsetX="-10" />
             <Controls>
-                <Texture name="$(parent)Icon" alpha="0.1">
+                <Texture name="$(parent)Icon" alpha="1">
                 <Dimensions x="24" y="24" />
                 <Anchor point="LEFT" offsetX="0" offsetY="0" />
                 <TextureCoords left="0" right="1" top="0" bottom="1" />
@@ -23,15 +23,15 @@
         </Control>
         <TopLevelControl name="FarmManagerWindow" mouseEnabled="true" movable="true" resizeHandleSize="8" hidden="true">
             <Dimensions x="520" y="680" />
-            <DimensionConstraints minX="420" minY="300" />
+            <DimensionConstraints minX="520" minY="300" />
             <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetY="20" offsetX="20" />
             <Controls>
-                <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha="0.3"/>
+                <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha=0.4 />
                 <Label name="$(parent)TitleLabel" font="$(ANTIQUE_FONT)|32|soft-shadow-thick" horizontalAlignment="CENTER" verticalAlignment="CENTER" text="Farm Manager">
                     <Anchor point="TOPLEFT" relativeTo="$(parent)" offsetX="10" offsetY="10" />
                     <Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-10" offsetY="10" />
                 </Label>
-        <Button name="$(parent)ButtonCloseAddon" inherits="ZO_ButtonBehaviorClickSound">
+                <Button name="$(parent)ButtonCloseAddon" inherits="ZO_ButtonBehaviorClickSound">
 					<Dimensions x="40" y="40" />
 					<Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="15" />
 					<Textures normal="EsoUI/Art/Buttons/closebutton_up.dds"
@@ -46,7 +46,7 @@
                     <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="70" />
                     <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="BOTTOMRIGHT" offsetX="-10" offsetY="-200" />
                     <Controls>
-                        <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha="0.3" />
+                        <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha=0.4/>
                         <Control name="$(parent)FmItemList" inherits="ZO_ScrollList">
                             <Anchor point="TOPLEFT" relativeTo="$(parent)" offsetX="0" offsetY="0" />
                             <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="BOTTOMRIGHT" offsetX="0" offsetY="0" />
@@ -61,7 +61,7 @@
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)DetailPanel" offsetX="-80" offsetY="10" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)DetailPanel" offsetX="0" offsetY="40" />
                 </Label>
-                <Label name="$(parent)GoldPerSecondNameLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="Gold Per Minute">
+                <Label name="$(parent)GoldPerSecondNameLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="Gold Per Second">
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)TotalNameLabel" offsetX="0" offsetY="10" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)TotalNameLabel" offsetX="160" offsetY="40" />
                 </Label>
@@ -69,7 +69,7 @@
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="-80" offsetY="10" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="0" offsetY="30" />
                 </Label>
-                <Button name="$(parent)ButtonStartFarm" mouseEnabled="true" inherits="ZO_DefaultButton">
+                <Button name="$(parent)ButtonStartFarm" mouseEnabled="true" inherits="ZO_DefaultButton" alpha=0.6>
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)GoldPerSecondNameLabel" offsetX="0" offsetY="10" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)GoldPerSecondNameLabel" offsetX="160" offsetY="40" />
                     <Controls>
@@ -81,7 +81,7 @@
                         FarmManager.Start()
                     </OnClicked>
                 </Button>
-                <Button name="$(parent)ButtonStopFarm" mouseEnabled="true" inherits="ZO_DefaultButton">
+                <Button name="$(parent)ButtonStopFarm" mouseEnabled="true" inherits="ZO_DefaultButton" alpha=0.6>
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)ButtonStartFarm" offsetX="0" offsetY="10" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)ButtonStartFarm" offsetX="160" offsetY="40" />
                     <Controls>
@@ -93,7 +93,7 @@
                         FarmManager.Stop()
                     </OnClicked>
                 </Button>
-                <Button name="$(parent)ButtonReset" mouseEnabled="true" inherits="ZO_DefaultButton">
+                <Button name="$(parent)ButtonReset" mouseEnabled="true" inherits="ZO_DefaultButton" alpha=0.6>
                     <Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeTo="$(parent)ButtonStartFarm" offsetX="10" offsetY="00" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)ButtonStartFarm" offsetX="170" offsetY="00" />
                     <Controls>
@@ -105,7 +105,7 @@
                         FarmManager.Reset()
                     </OnClicked>
                 </Button>
-                <Button name="$(parent)ButtonTransferItems" mouseEnabled="true" inherits="ZO_DefaultButton">
+                <Button name="$(parent)ButtonTransferItems" mouseEnabled="true" inherits="ZO_DefaultButton" alpha=0.6>
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)ButtonReset" offsetX="0" offsetY="10" />
                     <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)ButtonReset" offsetX="160" offsetY="40" />
                     <Controls>
