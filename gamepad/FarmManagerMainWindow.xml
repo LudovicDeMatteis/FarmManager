@@ -22,9 +22,9 @@
             </Controls>
         </Control>
         <TopLevelControl name="FarmManagerWindow" mouseEnabled="true" movable="true" resizeHandleSize="8" hidden="true">
-            <Dimensions x="520" y="680" />
+            <Dimensions x="520" y="300" />
             <DimensionConstraints minX="520" minY="300" />
-            <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetY="20" offsetX="20" />
+            <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetY="300" offsetX="20" />
             <Controls>
                 <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha=0.4 />
                 <Label name="$(parent)TitleLabel" font="$(ANTIQUE_FONT)|32|soft-shadow-thick" horizontalAlignment="CENTER" verticalAlignment="CENTER" text="Farm Manager">
