@@ -1,10 +1,10 @@
 <GuiXml>
     <Controls>
         <Control name="FarmManagerGUIItemListItemTemplate" mouseEnabled="true" virtual="true">
-            <Dimensions x="520" y="26" />
+            <Dimensions x="50" y="100" />
             <Anchor point="LEFT" relativeTo="$(parent)" offsetX="10" />
             <Anchor point="RIGHT" relativeTo="$(parent)" relativePoint="RIGHT" offsetX="-10" />
-            <Controls>
+            <!--<Controls>
                 <Texture name="$(parent)Icon" alpha="1">
                 <Dimensions x="24" y="24" />
                 <Anchor point="LEFT" offsetX="0" offsetY="0" />
@@ -19,10 +19,10 @@
                 <Label name="$(parent)PriceLabel" font="ZoFontGame" color="CFDCBD" wrapMode="ELLIPSIS" verticalAlignment="CENTER" text="D/H">
                 <Anchor point="RIGHT" relativeTo="$(parent)" relativePoint="RIGHT" offsetX="-5" offsetY="0" />
                 </Label>
-            </Controls>
+            </Controls>-->
         </Control>
         <TopLevelControl name="FarmManagerWindow" mouseEnabled="true" movable="true" resizeHandleSize="8" hidden="true">
-            <Dimensions x="400" y="100" />
+            <Dimensions x="400" y="110" />
             <DimensionConstraints minX="400" minY="50" />
             <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetY="260" offsetX="20" />
             <Controls>
@@ -44,7 +44,7 @@
 				</Button>
                 <Control name="$(parent)DetailPanel">
                     <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="50" />
-                    <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="390" offsetY="80" />
+                    <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="390" offsetY="100" />
                     <Controls>
                         <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha=0.4/>
                         <Control name="$(parent)FmItemList" inherits="ZO_ScrollList">
