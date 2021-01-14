@@ -1,7 +1,7 @@
 <GuiXml>
     <Controls>
         <Control name="FarmManagerGUIItemListItemTemplate" mouseEnabled="true" virtual="true">
-            <Dimensions x="50" y="100" />
+            <Dimensions x="520" y="26" />
             <Anchor point="LEFT" relativeTo="$(parent)" offsetX="10" />
             <Anchor point="RIGHT" relativeTo="$(parent)" relativePoint="RIGHT" offsetX="-10" />
             <Controls>
@@ -27,7 +27,7 @@
             <Anchor point="TOPLEFT" relativeTo="GuiRoot" relativePoint="TOPLEFT" offsetY="260" offsetX="20" />
             <Controls>
                 <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha=0.4 />
-                <Label name="$(parent)TitleLabel" font="$(ANTIQUE_FONT)|22|soft-shadow-thick" horizontalAlignment="CENTER" verticalAlignment="CENTER" text="Farm Manager">
+                <Label name="$(parent)TitleLabel" font="$(ANTIQUE_FONT)|32|soft-shadow-thick" horizontalAlignment="CENTER" verticalAlignment="CENTER" text="Farm Manager">
                     <Anchor point="TOPLEFT" relativeTo="$(parent)" offsetX="10" offsetY="10" />
                     <Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-10" offsetY="10" />
                 </Label>
@@ -44,7 +44,7 @@
 				</Button>
         <Button name="$(parent)ButtonReduceAddon" inherits="ZO_ButtonBehaviorClickSound">
             <Dimensions x="25" y="25"/>
-            <Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-15"/>
+            <Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-25"/>
             <Textures
                 normal="esoui/art/buttons/scrollbox_uparrow_up.dds"
                 mouseOver="esoui/art/buttons/scrollbox_uparrow_over.dds"
@@ -55,8 +55,8 @@
             </OnClicked>
         </Button>
                 <Control name="$(parent)DetailPanel">
-                    <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="50" />
-                    <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="390" offsetY="100" />
+                    <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="70" />
+                    <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="BOTTOMRIGHT" offsetX="-10" offsetY="-200" />
                     <Controls>
                         <Backdrop name="$(parent)BG" inherits="ZO_DefaultBackdrop" alpha=0.4/>
                         <Control name="$(parent)FmItemList" inherits="ZO_ScrollList">
@@ -66,20 +66,20 @@
                     </Controls>
                 </Control>
                 <Label name="$(parent)TotalNameLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="Total Farmed">
-                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)TitleLabel" offsetX="0" offsetY="10" />
-                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TitleLabel" offsetX="0" offsetY="30" />
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)DetailPanel" offsetX="0" offsetY="10" />
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)DetailPanel" offsetX="0" offsetY="30" />
                 </Label>
                 <Label name="$(parent)TotalLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="">
-                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TitleLabel" offsetX="-90" offsetY="10" />
-                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TitleLabel" offsetX="-10" offsetY="30" />
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)DetailPanel" offsetX="-80" offsetY="10" />
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)DetailPanel" offsetX="0" offsetY="40" />
                 </Label>
                 <Label name="$(parent)GoldPerSecondNameLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="Gold Per Second">
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)TotalNameLabel" offsetX="0" offsetY="10" />
-                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)TotalNameLabel" offsetX="160" offsetY="30" />
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)TotalNameLabel" offsetX="160" offsetY="40" />
                 </Label>
                 <Label name="$(parent)GoldPerSecondLabel" font="$(ANTIQUE_FONT)|16|soft-shadow-thick" text="">
-                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="-90" offsetY="10" />
-                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="-10" offsetY="30" />
+                    <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="-80" offsetY="10" />
+                    <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$(parent)TotalLabel" offsetX="0" offsetY="30" />
                 </Label>
                 <Button name="$(parent)ButtonStartFarm" mouseEnabled="true" inherits="ZO_DefaultButton" alpha=0.6>
                     <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" relativeTo="$(parent)GoldPerSecondNameLabel" offsetX="0" offsetY="10" />

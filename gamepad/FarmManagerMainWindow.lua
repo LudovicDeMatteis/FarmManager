@@ -30,7 +30,11 @@ function classes.FarmManagerMainWindow:Hide()
 end
 
 function classes.FarmManagerMainWindow:UpdateDataRow(control, data)
-  window:GetNamedChild("TotalLabel"):SetText(ToGold(math.floor(fm.farmer.totalValueFarmed or 0)))
+	control:GetNamedChild("Icon"):SetTexture(data.texture)
+	control:GetNamedChild("NameLabel"):SetText(zo_strformat('<<t:1>>', data.itemLink))
+	control:GetNamedChild("CountsLabel"):SetText(data.quantityFarmed)
+    control:GetNamedChild("PriceLabel"):SetText(ToGold(math.floor(data.totalValueFarmed)))
+    window:GetNamedChild("TotalLabel"):SetText(ToGold(math.floor(fm.farmer.totalValueFarmed or 0)))
 	window:GetNamedChild("GoldPerSecondLabel"):SetText(ToGold(math.floor(fm.farmer:GetGoldPerSecond() * 60)).."/min")
 end
 
