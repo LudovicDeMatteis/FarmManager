@@ -26,7 +26,8 @@ end
 
 function FarmManager.Init()
 	FarmManager.settings = FarmManager.classes.FmSettings:New()
-	FarmManager.window = FarmManager.classes.FarmManagerMainWindow:New()
+  FarmManager.window = FarmManager.classes.FarmManagerMainWindow:New()
+	FarmManager.mini_window = FarmManager.classes.FarmManagerWindowReduced:New()
 	FarmManager.farmer = FmFarmer:New(GetUnitName("player"))
 end
 
@@ -56,6 +57,16 @@ end
 
 function FarmManager.Hide()
 	FarmManager.window:Hide()
+end
+
+function FarmManager.Reduce()
+  FarmManager.mini_window:Show()
+	FarmManager.window:Hide()
+end
+
+function FarmManager.Develop()
+  FarmManager.mini_window:Hide()
+	FarmManager.window:Show()
 end
 
 function FarmManager.Start()

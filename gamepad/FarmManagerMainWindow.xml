@@ -4,7 +4,7 @@
             <Dimensions x="50" y="100" />
             <Anchor point="LEFT" relativeTo="$(parent)" offsetX="10" />
             <Anchor point="RIGHT" relativeTo="$(parent)" relativePoint="RIGHT" offsetX="-10" />
-            <!--<Controls>
+            <Controls>
                 <Texture name="$(parent)Icon" alpha="1">
                 <Dimensions x="24" y="24" />
                 <Anchor point="LEFT" offsetX="0" offsetY="0" />
@@ -19,7 +19,7 @@
                 <Label name="$(parent)PriceLabel" font="ZoFontGame" color="CFDCBD" wrapMode="ELLIPSIS" verticalAlignment="CENTER" text="D/H">
                 <Anchor point="RIGHT" relativeTo="$(parent)" relativePoint="RIGHT" offsetX="-5" offsetY="0" />
                 </Label>
-            </Controls>-->
+            </Controls>
         </Control>
         <TopLevelControl name="FarmManagerWindow" mouseEnabled="true" movable="true" resizeHandleSize="8" hidden="true">
             <Dimensions x="400" y="110" />
@@ -42,6 +42,18 @@
 						FarmManager.Hide()
 					</OnClicked>
 				</Button>
+        <Button name="$(parent)ButtonReduceAddon" inherits="ZO_ButtonBehaviorClickSound">
+            <Dimensions x="25" y="25"/>
+            <Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-15"/>
+            <Textures
+                normal="esoui/art/buttons/scrollbox_uparrow_up.dds"
+                mouseOver="esoui/art/buttons/scrollbox_uparrow_over.dds"
+                pressed="esoui/art/buttons/scrollbox_uparrow_down.dds"
+            />
+            <OnClicked>
+                FarmManager.Reduce()
+            </OnClicked>
+        </Button>
                 <Control name="$(parent)DetailPanel">
                     <Anchor point="TOPLEFT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="10" offsetY="50" />
                     <Anchor point="BOTTOMRIGHT" relativeTo="$(parent)" relativePoint="TOPLEFT" offsetX="390" offsetY="100" />
