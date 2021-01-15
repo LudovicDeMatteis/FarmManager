@@ -46,9 +46,9 @@
             <Dimensions x="25" y="25"/>
             <Anchor point="TOPRIGHT" relativeTo="$(parent)" relativePoint="TOPRIGHT" offsetX="-25"/>
             <Textures
-                normal="esoui/art/buttons/scrollbox_uparrow_up.dds"
-                mouseOver="esoui/art/buttons/scrollbox_uparrow_over.dds"
-                pressed="esoui/art/buttons/scrollbox_uparrow_down.dds"
+                normal="esoui/art/buttons/scrollbox_downarrow_up.dds"
+                mouseOver="esoui/art/buttons/scrollbox_downarrow_over.dds"
+                pressed="esoui/art/buttons/scrollbox_downarrow_down.dds"
             />
             <OnClicked>
                 FarmManager.Reduce()

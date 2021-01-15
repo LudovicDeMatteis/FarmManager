@@ -57,6 +57,7 @@ function FmFarmer:Farm(itemLink, quantity)
     local item = self.itemsFarmed:Add(itemLink, quantity)
     self.totalValueFarmed = self.totalValueFarmed + (item.value * quantity)
     fm.window:OnItemFarmed(item, ACTION_FARM)
+    fm.mini_window:OnItemFarmed(item, ACTION_FARM)
 end
 
 function FmFarmer:ItemFilter(itemData)

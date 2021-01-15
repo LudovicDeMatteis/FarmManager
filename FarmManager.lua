@@ -57,6 +57,7 @@ end
 
 function FarmManager.Hide()
 	FarmManager.window:Hide()
+  FarmManager.mini_window:Hide()
 end
 
 function FarmManager.Reduce()
